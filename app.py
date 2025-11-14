@@ -3,6 +3,14 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
+st.set_page_config(
+    page_title="My Awesome App",
+    page_icon="🚀",     
+    layout="wide",       
+    initial_sidebar_state="expanded"  
+)
+
+
 st.title("🧠 Handwritten Digit Recognition App")
 st.write("Upload an image of a handwritten digit (0–9) to see the model's prediction.")
 

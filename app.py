@@ -17,7 +17,7 @@ if uploaded_file is not None:
     img = img.resize((28, 28))
     img_array = np.array(img)
     img_array = 255 - img_array
-    img_array = img_array / 255.0
+    #img_array = img_array / 255.0
     img_array = np.expand_dims(img_array, axis=0)
 
     prediction = model.predict(img_array)
